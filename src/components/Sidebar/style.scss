@@ -1,0 +1,80 @@
+.nav-bar {
+    background-color: #181818;
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    min-height: 500;
+    .logo {
+        display: block;
+        padding: 8px;
+        img {
+            height: 100px;
+        }
+    }
+    nav {
+        text-align: center;
+        a {
+            display: block;
+            font-size: 22px;
+            color: #4d4d4e;
+            height: 51px;
+            line-height: 51px;
+            text-decoration: none;
+            position: relative;
+            i{
+                transition: all 0.3s ease-out;
+            }
+            &:hover {
+                color: #ffd700;
+                svg{
+                    opacity: 0;
+                }
+                &:after{
+                    opacity: 1;
+
+                }
+            }
+            &::after {
+                content: "";
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transition: all 0.3s ease-out;
+            }
+        }
+        a.home-link {
+            &::after{
+                content: "HOME";
+            }
+        }
+        a.about-link {
+            &::after{
+                content: "ABOUT";
+            }
+        }
+        a.projects-link {
+            &::after{
+                content: "PROJECTS";
+            }
+        }
+        a.contact-link {
+            &::after{
+                content: "CONTACT";
+            }
+        }
+        a.active {
+            svg{
+                color: #ffd700;
+            }
+        }
+    }
+}
+
+
