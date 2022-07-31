@@ -1,5 +1,20 @@
-.layout{
-    .pages{
-        
-    }
+.pages {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.tags {
+    color: #ffd700;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    font-size: 18px;
+    font-family: "la Belle Aurore";
+}
+.top-tags {
+    top: 110px;
+}
+.bottom-tag-html {
+    margin-left: -20px;
 }
