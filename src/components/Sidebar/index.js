@@ -2,7 +2,7 @@ import "./style.scss";
 import Logo from "../../assets/images/logo.svg"
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faPaperPlane, faUser, faRectangleHistory, faFileCode, faCode } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faPaperPlane, faUser, faGithub, faLinkedin, faCode } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
     return (
@@ -24,6 +24,23 @@ const Sidebar = () => {
                     <FontAwesomeIcon icon={faPaperPlane} />
                 </NavLink>
             </nav>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/zumrud-nerman/">
+                        <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/ZuuZaa">
+                        <FontAwesomeIcon icon="fa-brands fa-github" fontSize="20px" />
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/zumrud-nerman/">
+                        <FontAwesomeIcon icon="fa-brands fa-telegram" />
+                    </a>
+                </li>
+            </ul>
         </div>
     )
 }
