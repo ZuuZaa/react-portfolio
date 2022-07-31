@@ -1,10 +1,15 @@
 import "./style.scss";
 import Sidebar from "../Sidebar";
+import Sosialbar from "components/Sosialbar";
+
 
 const Layout = () => {
     return (
-        <div>
+        <div className="layout">
             <Sidebar />
+            <div className="pages">
+                <Sosialbar/>
+            </div>
         </div>
     )
 };

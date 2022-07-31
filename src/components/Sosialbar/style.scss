@@ -1,0 +1,21 @@
+.sosial-links {
+    display: flex;
+    justify-content: end;
+
+    ul {
+        list-style: none;
+        display: flex;
+        width: 120px;
+
+        a {
+            color: #4d4d4e;
+            font-size: 15px;
+            display: block;
+            padding: 10px;
+
+            &:hover svg {
+                color: #ffd700;
+            }
+        }
+    }
+}
