@@ -1,29 +1,19 @@
 .nav-bar {
     background-color: #181818;
     width: 60px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 3;
-    min-height: 700;
-
-    .logo {
-        display: block;
-        padding: 8px;
-
-        img {
-            height: 100px;
-        }
-    }
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
 
     nav {
-        text-align: center;
+        padding-top: 15px;
 
         a {
             display: block;
             font-size: 22px;
             color: #4d4d4e;
-            height: 51px;
             line-height: 51px;
             text-decoration: none;
             position: relative;
@@ -41,7 +31,6 @@
 
                 &::after {
                     opacity: 1;
-
                 }
             }
 
@@ -85,6 +74,23 @@
 
         a.active {
             svg {
+                color: #ffd700;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+            color: #4d4d4e;
+            font-size: 15px;
+            display: block;
+            margin-bottom: 15px;
+
+            &:hover svg {
                 color: #ffd700;
             }
         }
