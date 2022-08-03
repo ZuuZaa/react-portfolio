@@ -1,9 +1,7 @@
 import "./style.scss";
-import Logo from "assets/images/logo.svg"
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faUser, faCode, faEnvelope, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import Sosialbar from "components/Sosialbar";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 

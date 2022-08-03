@@ -1,23 +1,30 @@
 .layout {
     display: flex;
     width: 100vw;
-}
-.pages-container {
-    width: 100%;
-}
 
-.pages {
-    margin-top: 80px;
-    margin-left: 40px;
-}
+    .pages {
+        width: 100%;
+        margin: 3% 5%;
 
-.tags {
-    color: #ffd700;
-    opacity: 0.6;
-    font-size: 18px;
-    font-family: "la Belle Aurore";
-}
+        .tags {
+            color: #ffd700;
+            opacity: 0.6;
+            font-size: 18px;
+            font-family: "la Belle Aurore";
+        }
 
-.bottom-tag-html {
-    margin-left: -20px;
+        .bottom-tag-html {
+            margin-left: -20px;
+        }
+
+        .container {
+            width: 100%;
+            will-change: contents;
+            opacity: 0;
+            margin: 5%;
+            transform-style: preserve-3d;
+            animation: fadeIn 1s forwards;
+            animation-delay: 1s;
+        }
+    }
 }

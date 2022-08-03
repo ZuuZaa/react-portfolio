@@ -1,25 +1,22 @@
 import "./style.scss";
 import Sidebar from "components/Sidebar";
 import { Outlet } from "react-router-dom";
-import Sosialbar from "components/Sosialbar";
-
 
 const Layout = () => {
     return (
         <div className="layout">
-   
-                <Sidebar />
-                <div className="pages">
-                    <span className="tags top-tags">&lt;body&gt;</span>
-                    <Outlet />
-                    <span className="tags bottom-tags">
-                        &lt;/body&gt;
-                        <br />
-                        <span className="bottom-tag-html">
-                            &lt;/html&gt;
-                        </span>
+            <Sidebar />
+            <div className="pages">
+                <span className="tags top-tags">&lt;body&gt;</span>
+                <Outlet />
+                <span className="tags bottom-tags">
+                    &lt;/body&gt;
+                    <br />
+                    <span className="bottom-tag-html">
+                        &lt;/html&gt;
                     </span>
-                </div>
+                </span>
+            </div>
         </div>
     )
 };
