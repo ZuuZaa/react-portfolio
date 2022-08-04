@@ -3,7 +3,6 @@ import Logo from "assets/images/logo.svg";
 import { Link } from "react-router-dom";
 import AnimatedLetters from "components/AnimatedLetters";
 import { useEffect, useState } from "react";
-import Profil from "assets/images/profil.gif";
 
 const Home = () => {
 

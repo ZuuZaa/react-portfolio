@@ -1,9 +1,9 @@
 import "./style.scss";
 
-const Contact = () => {
+const Projects = () => {
     return (
-        <div>Contact</div>
+        <div>Projects</div>
     )
 }
 
-export default Contact;
+export default Projects;

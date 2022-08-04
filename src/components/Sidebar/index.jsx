@@ -34,7 +34,7 @@ const Sidebar = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/zumrud-nerman/" target="_blank">
+                    <a href="https://telegram.me/Userzuza/" target="_blank">
                         <FontAwesomeIcon icon={faPaperPlane} />
                     </a>
                 </li>
