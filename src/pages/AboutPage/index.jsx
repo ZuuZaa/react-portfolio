@@ -1,9 +1,9 @@
+import AnimatedCube from 'components/AnimatedCube';
 import AnimatedLetters from 'components/AnimatedLetters'
 import { useEffect, useState } from 'react';
 import './style.scss'
 
 const About = () => {
-
 
     const [letterClass, setLetterClass] = useState("text-animated");
     const strAttay = ['A', 'b', 'o', 'u', 't', ' ', 'm', 'e', '.'];
@@ -35,9 +35,7 @@ const About = () => {
                         innovation.
                     </p>
                 </div>
-                <div className="cube-zone">
-                    cube
-                </div>
+                <AnimatedCube/>
         </div>
     )
 }

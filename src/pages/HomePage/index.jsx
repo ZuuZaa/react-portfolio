@@ -1,9 +1,10 @@
 import "./style.scss";
 import Logo from "assets/images/logo.svg";
-import ProfilPhoto from "assets/images/profil.gif";
+import ProfilPhoto from "assets/images/profil.jpeg";
 import { Link } from "react-router-dom";
 import AnimatedLetters from "components/AnimatedLetters";
 import { useEffect, useState } from "react";
+import AnimatedCube from "components/AnimatedCube";
 
 const Home = () => {
 
@@ -31,6 +32,9 @@ const Home = () => {
                 </h1>
                 <h2>Frontend / JavaScript / ReactJs </h2>
                 <Link to="/contact" className="flat-button">Contact Me</Link>
+            </div>
+            <div className="image-zone">
+                <img src={ProfilPhoto} alt="profil photo" />
             </div>
         </div>
     )

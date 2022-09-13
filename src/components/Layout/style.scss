@@ -3,6 +3,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 11fr;
+    user-select: none;
 
     .pages {
         width: 100%;
