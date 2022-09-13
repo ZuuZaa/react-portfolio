@@ -17,7 +17,7 @@ const Home = () => {
     });
 
     return (
-        <div className="container home-page">
+        <div className="main-container home-page">
             <div className="text-zone">
                 <h1>
                     <span className={letterClass} >H</span>
@@ -31,11 +31,6 @@ const Home = () => {
                 </h1>
                 <h2>Frontend / JavaScript / ReactJs </h2>
                 <Link to="/contact" className="flat-button">Contact Me</Link>
-            </div>
-            <div className="image-zone">
-                <div className="image-wrapper">
-                    <img src={ProfilPhoto} alt="profil image" />
-                </div>
             </div>
         </div>
     )

@@ -1,13 +1,13 @@
 .nav-bar {
     background-color: #181818;
-    width: 72px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    text-align: center;
+    width: 80px;
 
     nav {
-        padding-top: 15px;
+        width: 100%;
 
         a {
             display: block;
@@ -35,7 +35,7 @@
 
             &::after {
                 content: "";
-                font-size: 9px;
+                font-size: 10px;
                 letter-spacing: 2px;
                 position: absolute;
                 bottom: 0;
@@ -80,15 +80,13 @@
 
     ul {
         list-style: none;
-        margin: 0;
-        padding: 0;
-
+       
         a {
             color: #4d4d4e;
-            font-size: 15px;
+            font-size: 20px;
             display: block;
             margin-bottom: 15px;
-
+            transition: all 0.3s ease-out;
             &:hover svg {
                 color: #ffd700;
             }
