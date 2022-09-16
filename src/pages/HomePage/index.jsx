@@ -20,6 +20,7 @@ const Home = () => {
     return (
         <div className="main-container home-page">
             <div className="text-zone">
+                <span className="tags">&lt;h1&gt;</span>
                 <h1>
                     <span className={letterClass} >H</span>
                     <span className={`${letterClass} _12`}>i,</span>
@@ -30,6 +31,7 @@ const Home = () => {
                     <br />
                     <AnimatedLetters letterClass={letterClass} strArray={jobStrArray} index={15} />
                 </h1>
+                <span className="tags">&lt;/h1&gt;</span>
                 <h2>Frontend / JavaScript / ReactJs </h2>
                 <Link to="/contact" className="flat-button">Contact Me</Link>
             </div>

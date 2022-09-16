@@ -2,9 +2,7 @@ import "./style.scss";
 
 const Projects = () => {
     return (
-        <div className="row">
-            <div className="offset-4 col-3">Projects</div>
-            </div>
+            <div className="projects-page">Projects</div>
     )
 }
 

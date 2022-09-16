@@ -1,35 +1,80 @@
 .contact-page {
-    .text-zone {
-        h1 {
-            color: #ffd700;
-            font-size: 53px;
-            font-family: "Coolvetica";
-            font-weight: 400;
-            padding-left: 30px;
-
-            &::before {
-                content: "<h1>";
-                font-family: "La Belle Aurore";
-                font-size: 18px;
-                opacity: 0.6;
-                color: #ffd700;
-                position: absolute;
-                top: -20px;
-                left: 0;
-            }
-
-            &::after {
-                content: "<h1 />";
-                font-family: "La Belle Aurore";
-                font-size: 18px;
-                opacity: 0.6;
-                color: #ffd700;
-                position: absolute;
-                top: 70px;
-                left: 0;
-            }
-
-
-        }
+  .text-zone {
+    h1 {
+      color: #ffd700;
+      font-size: 53px;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      padding-left: 30px;
     }
+    .text-animated-hover:hover {
+      color: rgb(160, 160, 160);
+    }
+
+    .contact-form {
+      width: 100%;
+      margin-top: 20px;
+
+      ul {
+
+        list-style: none;
+        .organiser {
+            display: flex;
+            justify-content: space-between;
+            li { 
+                width: 49%;
+            }
+          }
+        li {
+          width: 100%;
+          margin-bottom: 10px;
+          overflow: hidden;
+          position: relative;
+          opacity: 0;
+          display: block;
+          animation: fadeInUp 2s 2s;
+          animation-fill-mode: forwards;
+
+          input,
+          textarea {
+            width: 100%;
+            background-color: #115173;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            &::placeholder {
+              color: rgb(160, 160, 160);
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+
+          input {
+            height: 50px;
+            padding: 0 20px;
+          }
+          textarea {
+            height: 150px;
+            padding: 20px;
+          }
+          .flat-button {
+            color: #ffd700;
+            background: 0 0;
+            border: 1px solid #ffd700;
+            border-radius: 3px;
+            white-space: nowrap;
+            width: 30%;
+            float: right;
+
+            &:hover {
+              background-color: #ffd700;
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -6,30 +6,6 @@
             font-family: "Coolvetica";
             font-weight: 400;
             padding-left: 30px;
-
-            &::before {
-                content: "<h1>";
-                font-family: "La Belle Aurore";
-                font-size: 18px;
-                opacity: 0.6;
-                color: #ffd700;
-                position: absolute;
-                top: -20px;
-                left: 0;
-            }
-
-            &::after {
-                content: "<h1 />";
-                font-family: "La Belle Aurore";
-                font-size: 18px;
-                opacity: 0.6;
-                color: #ffd700;
-                position: absolute;
-                top: 70px;
-                left: 0;
-            }
-
-
         }
 
         p {

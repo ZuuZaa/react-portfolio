@@ -9,26 +9,6 @@
       font-family: 'Coolvetica';
       font-weight: 400;
 
-      &::before {
-        content: '<h1>';
-        font-family: 'La Belle Aurore';
-        font-size: 18px;
-        opacity: 0.6;
-        color: #ffd700;
-        position: absolute;
-        margin-top: -3%;
-      }
-
-      &::after {
-        content: '<h1 />';
-        font-family: 'La Belle Aurore';
-        font-size: 18px;
-        opacity: 0.6;
-        color: #ffd700;
-        margin-top: 3%;
-        margin-left: 3%;
-      }
-
       img {
         width: 160px;
         margin-left: 30px;
@@ -76,8 +56,9 @@
     opacity: 0;
     animation: fadeIn 3s linear both;
     animation-delay: 1.4s;
+
     img {
-width: 400px;
+      width: 400px;
       box-shadow: 0px 0px 40px 10px #101010;
     }
   }
