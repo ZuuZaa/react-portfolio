@@ -31,6 +31,20 @@
             }
         }
 
+        .download {
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 300;
+            transition: all 0.3s ease-out;
+            .fa-download {
+                margin-right: 10px;
+            }
+            &:hover {
+                letter-spacing: 3px;
+            }
+        }
+
         .text-animated-hover:hover {
                 color: rgb(160, 160, 160);
             }
