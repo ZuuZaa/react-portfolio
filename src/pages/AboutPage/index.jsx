@@ -8,7 +8,7 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animated')
-  const strAttay = ['A', 'b', 'o', 'u', 't', ' ', 'm', 'e', '.']
+  const strAttay = "About me".split("")
 
   useEffect(() => {
     setTimeout(() => {

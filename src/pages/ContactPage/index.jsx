@@ -7,9 +7,9 @@ import './style.scss'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animated');
-    const strAttay = ['C', 'o', 'n', 't', 'a', 'c ', 't', ' ', 'm', 'e'];
+    const strAttay = "Contact me".split("");
     const refForm = useRef();
-    const position = [40.27, 49.60];
+    const position = [40.363, 49.95];
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -87,26 +87,24 @@ const Contact = () => {
                 </form>
             </div>
             <div className="map-zone">
-
                 <div className='info'>
-            Zumrud Baghirova, <br />
-            Baku, Azerbaijan <br /> <br />
-            <span>zumbaghirova@gmail.com</span>
-        </div>
-        <div className="map-wrap">
-
-                                <MapContainer center={position} zoom={8} scrollWheelZoom={false}>
-                    <TileLayer
-                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    />
-                    <Marker position={position}>
-                        <Popup>
-                           Zumrud lives here <br /> come over for a cup of coffee :)
-                        </Popup>
-                    </Marker>
-                </MapContainer>
-        </div>
+                    Zumrud Baghirova, <br />
+                    Baku, Azerbaijan <br /> <br />
+                    <span>zumbaghirova@gmail.com</span>
+                </div>
+                <div className="map-wrap">
+                    <MapContainer center={position} zoom={8} scrollWheelZoom={false}>
+                        <TileLayer
+                            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        />
+                        <Marker position={position}>
+                            <Popup>
+                                Zumrud lives here <br /> come over for a cup of coffee :)
+                            </Popup>
+                        </Marker>
+                    </MapContainer>
+                </div>
             </div>
         </div>
     )

@@ -5,16 +5,6 @@
   justify-content: space-between;
   text-align: center;
   width: 80px;
-  
-  .avatar {
-    div {
-      width: 100%
-    }
-    img {
-      width: 100%;
-      border-radius: 50%;
-    }
-  }
 
   nav {
     width: 100%;
@@ -69,7 +59,7 @@
       }
     }
 
-    a.projects-link {
+    a.portfolio-link {
       &::after {
         content: 'PORTFOLIO';
       }
