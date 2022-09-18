@@ -29,13 +29,13 @@ const Portfolio = () => {
       </h1>
       <span className="tags">&lt;/h1&gt;</span>
       <div className="portfolio-container">
-        {portfolioData.map(item => (
+        {/* {portfolioData.map(item => (
           <div className="portfolio-wrapper" key={item.key}>
             <img src={item.cover} alt="" />
             {item.key}
       
           </div>
-        ))}
+        ))} */}
       </div>
     </div>
   )
