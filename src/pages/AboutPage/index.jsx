@@ -11,9 +11,12 @@ const About = () => {
   const strAttay = "About me".split("")
 
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setLetterClass('text-animated-hover')
-    }, 3000)
+    }, 3000);
+    return () => {
+      clearTimeout(timer)
+    };
   })
 
   return (

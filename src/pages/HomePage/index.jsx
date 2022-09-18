@@ -11,10 +11,13 @@ const Home = () => {
     const jobStrArray = "web developer".split("");
 
     useEffect(() => {
-        setTimeout(() => {
-            setLetterClass("text-animated-hover")
-        }, 4000)
-    });
+        const timer = setTimeout(() => {
+          setLetterClass('text-animated-hover')
+        }, 4000);
+        return () => {
+          clearTimeout(timer)
+        };
+      })
 
     return (
         <div className="main-container home-page">

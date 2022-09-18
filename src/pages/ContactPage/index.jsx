@@ -33,10 +33,14 @@ const Contact = () => {
     }
 
     useEffect(() => {
-        setTimeout(() => {
-            setLetterClass('text-animated-hover')
-        }, 3000)
-    })
+        const timer = setTimeout(() => {
+          setLetterClass('text-animated-hover')
+        }, 3000);
+        return () => {
+          clearTimeout(timer)
+        };
+      })
+      
     return (
         <div className="main-container contact-page">
             <div className="text-zone">
