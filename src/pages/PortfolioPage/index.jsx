@@ -2,6 +2,7 @@ import AnimatedLetters from "components/AnimatedLetters";
 import { useEffect, useState } from "react";
 import { portfolioData } from "data/portfolio";
 import "./style.scss";
+import Card from "components/Card";
 
 const Portfolio = () => {
 
@@ -28,20 +29,7 @@ const Portfolio = () => {
       </h1>
       <div className="portfolio-container">
         {portfolioData.map(item => (
-          <div className="portfolio-card" key={item.key}>
-            <img src={item.cover} alt="cover" className="portfolio-cover" />
-            <div className="content">
-              <div className="content-header">
-                <div className="card-title">{item.title}</div>
-                <ul className="card-description">{item.description.map(item => <li>{item}</li>)}</ul>
-              </div>
-              <div className="buttons">
-                <a href={item.url} target="blank">demo</a>
-                <a href={item.repo} target="blank">repo</a>
-              </div>
-
-            </div>
-          </div>
+          <Card item={item} />
         ))}
       </div>
     </div>
