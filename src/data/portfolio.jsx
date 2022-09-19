@@ -40,7 +40,7 @@ export  const portfolioData = [
     },
     {
         cover: SeljanCover,
-        title: "Todo List",
+        title: "Seljan Nasibli",
         key: "seljan",
         url: "https://www.seljannasibli.com/",
         repo: "https://github.com/ZuuZaa/seljan_nasibli",
