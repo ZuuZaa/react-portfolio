@@ -16,10 +16,8 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
         flex-wrap: wrap;
-        animation: fadeIn 1s linear;
-        animation-delay: 3s;
-//     animation-fill-mode: forwards;
-       // animation: fadeIn 4s linear both;
+        // animation: fadeIn 1s 1.5s;
+        // animation-fill-mode: forwards;    
     }
 
 }

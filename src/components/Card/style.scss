@@ -2,6 +2,9 @@
     position: relative;
     transition: transform .2s;
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.16);
+    opacity: 0;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
 
     &:hover {
         transform: scale(1.05);
@@ -87,3 +90,10 @@
         }
     }
 }
+
+@for $i from 2 through 35 {
+    .portfolio-card._#{$i} {
+      animation-delay: #{$i / 10}s;
+    }
+  }
+
