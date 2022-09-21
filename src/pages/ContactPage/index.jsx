@@ -91,11 +91,11 @@ const Contact = () => {
                 </form>
             </div>
             <div className="map-zone">
-                <div className='info'>
+                <address className='info'>
                     Zumrud Baghirova, <br />
                     Baku, Azerbaijan <br /> <br />
                     <span>zumbaghirova@gmail.com</span>
-                </div>
+                </address>
                 <div className="map-wrap">
                     <MapContainer center={position} zoom={8} scrollWheelZoom={false}>
                         <TileLayer
