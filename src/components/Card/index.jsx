@@ -7,7 +7,7 @@ const Card = ({ item }) => {
             <div className="content">
                 <div className="content-header">
                     <div className="card-title">{item.title}</div>
-                    <ul className="card-description">{item.description.map(item => <li>{item}</li>)}</ul>
+                    <ul className="card-description">{item.description.map((item, index) => <li key={index}>{item}</li>)}</ul>
                 </div>
                 <div className="buttons">
                     <a href={item.url} target="blank">demo</a>

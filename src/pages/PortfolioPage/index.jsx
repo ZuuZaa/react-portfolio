@@ -28,8 +28,8 @@ const Portfolio = () => {
         />
       </h1>
       <div className="portfolio-container">
-        {portfolioData.map(item => (
-          <Card item={item} />
+        {portfolioData.map((item, index) => (
+          <Card item={item} key={index}/>
         ))}
       </div>
     </div>
