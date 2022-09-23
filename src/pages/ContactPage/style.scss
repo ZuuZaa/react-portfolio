@@ -116,3 +116,9 @@
         }
     }
 }
+
+@media screen and (max-width: 800px ) {
+    .map-zone {
+        display: none;
+    }
+}
