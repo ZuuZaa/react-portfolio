@@ -5,6 +5,7 @@
   justify-content: space-between;
   text-align: center;
   width: 80px;
+ // position: relative;
 
   nav {
     width: 100%;
@@ -14,7 +15,6 @@
       font-size: 22px;
       color: #4d4d4e;
       line-height: 51px;
-      text-decoration: none;
       position: relative;
 
       i {
@@ -72,14 +72,11 @@
     }
 
     a.active {
-      svg {
-        color: #ffd700;
-      }
+      color: #ffd700;
     }
   }
 
   ul {
-    list-style: none;
 
     a {
       color: #4d4d4e;
@@ -92,7 +89,58 @@
       }
     }
   }
+  .hamburger-bars {
+    display: none;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
 }
 @media  screen and (max-width: 800px) {
+
+
+  .nav-bar {
+    background: transparent;
+    width: 100%;
+
+    ul, nav {
+      display: none;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background: #181818;
+      height: 100%;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::after {
+          opacity: 1;
+          position: initial;
+          width: auto;
+          margin-left: 20px;
+        }
+
+        &:hover {
+          svg {
+            opacity: 1;
+          }
+        }
+      }
+      &.mobile-nav {
+        display: block;
+      }
+    }
+    .hamburger-bars {
+      display: block;
+
+    }
+  }
 
 }

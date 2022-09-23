@@ -1,15 +1,20 @@
 import "./style.scss";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faUser, faEnvelope, faPaperPlane, faSuitcase } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faUser, faEnvelope, faPaperPlane, faSuitcase, faBars } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-//import ProfilPhoto from "assets/images/profil.gif";
+import { useState } from "react";
 
 
 const Sidebar = () => {
+    const [showNav, setShowNav] = useState(false);
+    const clickHandler = (e) => {
+        setShowNav(true)
+    }
+
     return (
         <div className="nav-bar">
-            <nav>
+            <nav className={showNav ? "mobile-nav" : " "}>
                 <NavLink exact="true" activeclassname="active" className="home-link" to="/">
                     <FontAwesomeIcon icon={faHome} />
                 </NavLink>
@@ -40,6 +45,12 @@ const Sidebar = () => {
                     </a>
                 </li>
             </ul>
+            <FontAwesomeIcon
+                icon={faBars}
+                size="3x"
+                color="#ffd700"
+                className="hamburger-bars"
+                onClick={clickHandler} />
         </div>
     )
 }

@@ -1,16 +1,14 @@
 .layout {
     width: 100vw;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 80px 1fr;
     user-select: none;
 
     .pages {
         width: 100%;
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 20px;
+        padding: 20px 40px;
 
         .tags {
             color: #ffd700;
@@ -21,16 +19,34 @@
 
         .bottom-tag-html {
             margin-left: -20px;
-       }
+        }
 
         .main-container {
             width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
             opacity: 0;
             transform-style: preserve-3d;
             animation: fadeIn 1s forwards;
             animation-delay: 1s;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .layout {
+        display: block;
+        .main-container  {
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .layout {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        .main-container  {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
     }
 }

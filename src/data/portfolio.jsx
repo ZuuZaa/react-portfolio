@@ -28,7 +28,7 @@ export  const portfolioData = [
         key: "hr",
         url: "https://hr-management-erp.netlify.app",
         repo: "https://github.com/ZuuZaa/xezan_tv",
-        description: ["Raect Js","Material UI", "Redux Saga", "Formik", "Date-fns"]
+        description: ["Raect Js","Material UI", "Redux Saga", "Formik"]
     },
     {
         cover: LiftCover,
