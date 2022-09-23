@@ -48,8 +48,8 @@
     opacity: 0;
     animation: fadeIn 3s linear both;
     animation-delay: 1.4s;
+    width: 100%;
     display: flex;
-
     align-items: center;
 
     img {
@@ -68,9 +68,9 @@
 
 @media screen and (max-width: 1200px) {
   .image-zone {
-    justify-content: flex-start;
     img {
       width: 200px;
+      margin:30px;
     }
   }
 }
