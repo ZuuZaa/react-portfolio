@@ -1,13 +1,6 @@
 .home-page {
   .text-zone {
-    width: 100%;
     h1 {
-      color: rgb(160, 160, 160);
-      margin: 0;
-      font-size: 50px;
-      font-family: 'Coolvetica';
-      font-weight: 400;
-
       img {
         width: 160px;
         margin-left: 30px;
@@ -55,23 +48,38 @@
     opacity: 0;
     animation: fadeIn 3s linear both;
     animation-delay: 1.4s;
+    display: flex;
+
+    align-items: center;
 
     img {
-      width: 400px;
       box-shadow: 0px 0px 40px 10px #101010;
     }
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .image-zone {
-    display: none;
-  }
-}
-
 @keyframes flip {
+
   0%,
   80% {
     transform: rotateY(360deg);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .image-zone {
+    justify-content: flex-start;
+    img {
+      width: 200px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image-zone {
+    justify-content: center;
+    img {
+      width: 400px;
+    }
   }
 }

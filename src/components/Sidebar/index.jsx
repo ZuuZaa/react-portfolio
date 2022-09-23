@@ -1,30 +1,39 @@
 import "./style.scss";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faUser, faEnvelope, faPaperPlane, faSuitcase, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faUser, faEnvelope, faPaperPlane, faSuitcase, faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 
 
 const Sidebar = () => {
     const [showNav, setShowNav] = useState(false);
-    const clickHandler = (e) => {
+    const openNavHandler = (e) => {
         setShowNav(true)
+    }
+    const closeNavHandler = (e) => {
+        setShowNav(false)
     }
 
     return (
         <div className="nav-bar">
             <nav className={showNav ? "mobile-nav" : " "}>
-                <NavLink exact="true" activeclassname="active" className="home-link" to="/">
+                <FontAwesomeIcon 
+                icon={faClose} 
+                size="3x"
+                color="#ffd700"
+                className="hamburger-bars"
+                onClick={closeNavHandler}/>
+                <NavLink exact="true" activeclassname="active" className="home-link" to="/" onClick={closeNavHandler}>
                     <FontAwesomeIcon icon={faHome} />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
+                <NavLink exact="true" activeclassname="active" className="about-link" to="/about" onClick={closeNavHandler}>
                     <FontAwesomeIcon icon={faUser} />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="portfolio-link" to="/portfolio">
+                <NavLink exact="true" activeclassname="active" className="portfolio-link" to="/portfolio" onClick={closeNavHandler}>
                     <FontAwesomeIcon icon={faSuitcase} />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+                <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" onClick={closeNavHandler}>
                     <FontAwesomeIcon icon={faEnvelope} />
                 </NavLink>
             </nav>
@@ -50,7 +59,7 @@ const Sidebar = () => {
                 size="3x"
                 color="#ffd700"
                 className="hamburger-bars"
-                onClick={clickHandler} />
+                onClick={openNavHandler} />
         </div>
     )
 }
