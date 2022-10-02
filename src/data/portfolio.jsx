@@ -3,6 +3,7 @@ import PortfolioCover from "assets/images/portfolio.png";
 import LiftCover from "assets/images/lift.png";
 import SeljanCover from "assets/images/seljan.png";
 import XezanTvCover from "assets/images/xezanTv.png";
+import SmartWinnersCover from "assets/images/smart-winners.png";
 
 
 export  const portfolioData = [
@@ -11,7 +12,7 @@ export  const portfolioData = [
         title: "Todo List",
         key: "todo",
         url: "https://mytodolistwithreact.netlify.app/",
-        repo: "https://github.com/ZuuZaa/todo_react",
+        repo: "https://github.com/ZuuZaa/todo_react/tree/master/src",
         description: ["Raect Js", "Context API", "Theme toogling", "Local Storage"]
     },
     {
@@ -19,7 +20,7 @@ export  const portfolioData = [
         title: "Portfolio Page",
         key: "portfolio",
         url: "https://zumrudsportfolio.netlify.app/",
-        repo: "https://github.com/ZuuZaa/react-portfolio",
+        repo: "https://github.com/ZuuZaa/react-portfolio/tree/master/src",
         description: ["Raect Js", "Emailjs", "Leaflet Map"]
     },
     {
@@ -27,9 +28,16 @@ export  const portfolioData = [
         title: "HR management",
         key: "hr",
         url: "https://hr-management-erp.netlify.app",
-        repo: "https://github.com/ZuuZaa/xezan_tv",
+        repo: "https://github.com/ZuuZaa/xezan_tv/tree/master/src",
         description: ["Raect Js","Material UI", "Redux Saga", "Formik"]
     },
+    {
+        cover: SmartWinnersCover,
+        title: "Lottery Draws",
+        key: "lottery",
+        url: "https://biggestlotterywinners.netlify.app/",
+        repo: "https://github.com/ZuuZaa/smart_winners/tree/master/src",
+        description: ["React js", "Bootstrap"]    },
     {
         cover: LiftCover,
         title: "Lift Info",
@@ -45,4 +53,5 @@ export  const portfolioData = [
         url: "https://www.seljannasibli.com/",
         repo: "https://github.com/ZuuZaa/seljan_nasibli",
         description: ["Bootstrap", "Jquery", "Carousel"]    }
+
 ]
