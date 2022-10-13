@@ -1,4 +1,10 @@
 .portfolio-page {
+    h1 {
+        color: #ffd700;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+        font-size: 5rem;
+    }
     .portfolio-container {
         padding-bottom: 20px;
         display: grid;
@@ -6,13 +12,8 @@
         opacity: 0;
         animation: backInRight 1s 1.2s;
         animation-fill-mode: forwards;
-        h1 {
-            color: #ffd700;
-            font-family: 'Coolvetica';
-            font-weight: 400;
-        }
+        overflow: scroll;
     }
-
 }
 @media screen and (max-width:768px) {
     .portfolio-container {
