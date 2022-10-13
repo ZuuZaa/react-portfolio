@@ -1,5 +1,6 @@
 import TodoCover from "assets/images/todo.png";
 import PortfolioCover from "assets/images/portfolio.png";
+import BitcoinCover from "assets/images/BTC.png";
 import LiftCover from "assets/images/lift.png";
 import SeljanCover from "assets/images/seljan.png";
 import XezanTvCover from "assets/images/xezanTv.png";
@@ -13,15 +14,15 @@ export  const portfolioData = [
         key: "todo",
         url: "https://mytodolistwithreact.netlify.app/",
         repo: "https://github.com/ZuuZaa/todo_react/tree/master/src",
-        description: ["Raect Js", "Context API", "Theme toogling", "Local Storage"]
+        description: ["Raect Js", "Context API", "Theme toogling", "Local Storage", "Drag & Drop"]
     },
     {
-        cover: PortfolioCover,
-        title: "Portfolio Page",
-        key: "portfolio",
-        url: "https://zumrudsportfolio.netlify.app/",
-        repo: "https://github.com/ZuuZaa/react-portfolio/tree/master/src",
-        description: ["Raect Js", "Emailjs", "Leaflet Map"]
+        cover: BitcoinCover,
+        title: "Bitcoin Prices",
+        key: "btc",
+        url: "https://bitcoinrates.netlify.app/",
+        repo: "https://github.com/ZuuZaa/bitcoin_prices_react-redux_coindeskAPI/tree/master/src",
+        description: ["Raect Js", "Redux", "ChartJs", "Coindesk API"]
     },
     {
         cover: XezanTvCover,
@@ -30,6 +31,14 @@ export  const portfolioData = [
         url: "https://hr-management-erp.netlify.app",
         repo: "https://github.com/ZuuZaa/xezan_tv/tree/master/src",
         description: ["Raect Js","Material UI", "Redux Saga", "Formik"]
+    },
+    {
+        cover: PortfolioCover,
+        title: "Portfolio Page",
+        key: "portfolio",
+        url: "https://zumrudsportfolio.netlify.app/",
+        repo: "https://github.com/ZuuZaa/react-portfolio/tree/master/src",
+        description: ["Raect Js", "Emailjs", "Leaflet Map"]
     },
     {
         cover: SmartWinnersCover,
