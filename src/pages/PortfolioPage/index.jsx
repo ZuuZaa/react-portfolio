@@ -19,7 +19,7 @@ const Portfolio = () => {
   })
 
   return (
-    <div className="portfolio-page">
+    <div className="main-container portfolio-page">
       <h1>
         <AnimatedLetters
           strArray={strAttay}
