@@ -1,7 +1,7 @@
 import TodoCover from "assets/images/todo.png";
 import PortfolioCover from "assets/images/portfolio.png";
 import BitcoinCover from "assets/images/BTC.png";
-import LiftCover from "assets/images/lift.png";
+import CalcCover from "assets/images/calc.png";
 import SeljanCover from "assets/images/seljan.png";
 import XezanTvCover from "assets/images/xezanTv.png";
 import SmartWinnersCover from "assets/images/smart-winners.png";
@@ -23,6 +23,14 @@ export  const portfolioData = [
         url: "https://bitcoinrates.netlify.app/",
         repo: "https://github.com/ZuuZaa/bitcoin_prices_react-redux_coindeskAPI/tree/master/src",
         description: ["Raect Js", "Redux", "ChartJs", "Coindesk API"]
+    },
+    {
+        cover: CalcCover,
+        title: "Calculator JS",
+        key: "calc",
+        url: "https://calculatewithzumrud.netlify.app/",
+        repo: "https://github.com/ZuuZaa/calculator_js",
+        description: ["SCSS", "JS"]
     },
     {
         cover: XezanTvCover,
@@ -47,14 +55,7 @@ export  const portfolioData = [
         url: "https://biggestlotterywinners.netlify.app/",
         repo: "https://github.com/ZuuZaa/smart_winners/tree/master/src",
         description: ["React js", "Bootstrap"]    },
-    {
-        cover: LiftCover,
-        title: "Lift Info",
-        key: "lift",
-        url: "https://liftback.herokuapp.com/",
-        repo: "https://github.com/ZuuZaa/lift_info_python_django",
-        description: ["Python", "Django"]
-    },
+
     {
         cover: SeljanCover,
         title: "Seljan Nasibli",
