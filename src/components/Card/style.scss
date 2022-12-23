@@ -7,10 +7,16 @@
     position: relative;
     transition: transform .2s;
 
+    .portfolio-cover {
+        object-fit: cover;
+    }
+
     &:hover {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         transform: scale(1.02);
+
         .portfolio-cover {
+            object-fit: cover;
             filter: grayscale(10%);
         }
     }
@@ -37,12 +43,15 @@
         background: linear-gradient(180deg,
                 rgb(0, 0, 0, 0.3) 0,
                 rgb(0, 0, 0, 1));
-                transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);       
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
         &:hover {
             background: linear-gradient(180deg,
-            rgb(0, 0, 0, 0.01) 0,
-            rgb(0, 0, 0, 0.6));
-            .card-description, .card-title {
+                    rgb(0, 0, 0, 0.01) 0,
+                    rgb(0, 0, 0, 0.6));
+
+            .card-description,
+            .card-title {
                 visibility: hidden;
             }
         }
@@ -50,7 +59,7 @@
         .card-title {
             font-weight: 400;
             font-size: 14px;
-            
+
         }
 
         .card-description {
@@ -58,6 +67,7 @@
             font-weight: 300;
             overflow: scroll;
         }
+
         .buttons {
             display: flex;
             justify-content: space-between;
