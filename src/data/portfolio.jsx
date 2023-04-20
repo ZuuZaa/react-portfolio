@@ -3,11 +3,13 @@ import PortfolioCover from "assets/images/portfolio.png";
 import BitcoinCover from "assets/images/BTC.png";
 import CalcCover from "assets/images/calc.png";
 import SeljanCover from "assets/images/seljan.png";
+import StarbucksCover from "assets/images/starbucks.png";
+import CountryCover from "assets/images/country.png";
 import XezanTvCover from "assets/images/xezanTv.png";
 import SmartWinnersCover from "assets/images/smart-winners.png";
 
 
-export  const portfolioData = [
+export const portfolioData = [
     {
         cover: TodoCover,
         title: "Todo List",
@@ -38,7 +40,31 @@ export  const portfolioData = [
         key: "hr",
         url: "https://hr-management-erp.netlify.app",
         repo: "https://github.com/ZuuZaa/xezan_tv/tree/master/src",
-        description: ["Raect Js","Material UI", "Redux Saga", "Formik"]
+        description: ["Raect Js", "Material UI", "Redux Saga", "Formik"]
+    },
+    {
+        cover: StarbucksCover,
+        title: "Starbucks / in repair",
+        key: "starbucks",
+        url: "https://bestcoffestarbucks.netlify.app/",
+        repo: "https://github.com/ZuuZaa/starbucks/tree/master/src",
+        description: ["Raect Js", "SCSS", "Styled Components"]
+    },
+    {
+        cover: SeljanCover,
+        title: "Seljan Nasibli",
+        key: "seljan",
+        url: "https://www.seljannasibli.com/",
+        repo: "https://github.com/ZuuZaa/seljan_nasibli",
+        description: ["Bootstrap", "Jquery", "Carousel"]
+    },
+    {
+        cover: CountryCover,
+        title: "Countries / in repair",
+        key: "country",
+        url: "https://country-app-by-zumrud.netlify.app/",
+        repo: "https://github.com/ZuuZaa/countries",
+        description: ["Raect Js", "Coindesk API", "Styled Components"]
     },
     {
         cover: PortfolioCover,
@@ -54,14 +80,9 @@ export  const portfolioData = [
         key: "lottery",
         url: "https://biggestlotterywinners.netlify.app/",
         repo: "https://github.com/ZuuZaa/smart_winners/tree/master/src",
-        description: ["React js", "Bootstrap"]    },
+        description: ["React js", "Bootstrap"]
+    }
 
-    {
-        cover: SeljanCover,
-        title: "Seljan Nasibli",
-        key: "seljan",
-        url: "https://www.seljannasibli.com/",
-        repo: "https://github.com/ZuuZaa/seljan_nasibli",
-        description: ["Bootstrap", "Jquery", "Carousel"]    }
+
 
 ]

@@ -1,0 +1,17 @@
+@import "animate.css";
+@font-face {
+  font-family: "Helvetika Neue";
+  src: url("./assets/fonts/HelveticaNeue.ttf") format("ttf");
+}
+@font-face {
+  font-family: "La Belle Aurore";
+  src: url("./assets/fonts/la_belle_aurore.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Coolvetica";
+  src: url("./assets/fonts/coolvetica.woff2") format("woff2");
+}
+input,
+textarea {
+  font-family: sans-serif;
+}/*# sourceMappingURL=App.css.map */
