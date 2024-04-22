@@ -33,14 +33,6 @@ export const portfolioData = [
     description: ['raect', 'styled components', 'sass'],
   },
   {
-    cover: BitcoinCover,
-    title: 'Bitcoin Prices',
-    key: 'btc',
-    url: 'https://bitcoinrates.netlify.app/',
-    repo: 'https://github.com/ZuuZaa/bitcoin_prices_react-redux_coindeskAPI',
-    description: ['Raect Js', 'Redux', 'ChartJs', 'Coindesk API'],
-  },
-  {
     cover: CalcCover,
     title: 'Calculator JS',
     key: 'calc',
@@ -87,5 +79,13 @@ export const portfolioData = [
     url: 'https://nobelelektrik.netlify.app/',
     repo: 'https://github.com/ZuuZaa/nobelelektrik',
     description: ['Bootstrap', 'Jquery', 'Carousel'],
+  },
+  {
+    cover: BitcoinCover,
+    title: 'Bitcoin Prices',
+    key: 'btc',
+    url: 'https://bitcoinrates.netlify.app/',
+    repo: 'https://github.com/ZuuZaa/bitcoin_prices_react-redux_coindeskAPI',
+    description: ['Raect Js', 'Redux', 'ChartJs', 'Coindesk API'],
   },
 ]
