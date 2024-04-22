@@ -15,7 +15,7 @@ export const portfolioData = [
     title: 'Todo List',
     key: 'todo',
     url: 'https://mytodolistwithreact.netlify.app/',
-    repo: 'https://github.com/ZuuZaa/todo_react/tree/master/src',
+    repo: 'https://github.com/ZuuZaa/todo_react',
     description: [
       'Raect Js',
       'Context API',
@@ -29,7 +29,7 @@ export const portfolioData = [
     title: 'Space Tourism',
     key: 'space',
     url: 'https://space-tourism-by-zumrud.netlify.app/',
-    repo: 'https://github.com/ZuuZaa/space-tourism/tree/master/src',
+    repo: 'https://github.com/ZuuZaa/space-tourism',
     description: ['raect', 'styled components', 'sass'],
   },
   {
@@ -37,7 +37,7 @@ export const portfolioData = [
     title: 'Bitcoin Prices',
     key: 'btc',
     url: 'https://bitcoinrates.netlify.app/',
-    repo: 'https://github.com/ZuuZaa/bitcoin_prices_react-redux_coindeskAPI/tree/master/src',
+    repo: 'https://github.com/ZuuZaa/bitcoin_prices_react-redux_coindeskAPI',
     description: ['Raect Js', 'Redux', 'ChartJs', 'Coindesk API'],
   },
   {
@@ -53,7 +53,7 @@ export const portfolioData = [
     title: 'HR management',
     key: 'hr',
     url: 'https://hr-management-erp.netlify.app',
-    repo: 'https://github.com/ZuuZaa/xezan_tv/tree/master/src',
+    repo: 'https://github.com/ZuuZaa/xezan_tv',
     description: ['Raect Js', 'Material UI', 'Redux Saga', 'Formik'],
   },
   {
@@ -77,7 +77,7 @@ export const portfolioData = [
     title: 'Portfolio Page',
     key: 'portfolio',
     url: 'https://zumrudsportfolio.netlify.app/',
-    repo: 'https://github.com/ZuuZaa/react-portfolio/tree/master/src',
+    repo: 'https://github.com/ZuuZaa/react-portfolio',
     description: ['Raect Js', 'Emailjs', 'Leaflet Map'],
   },
   {
