@@ -1,6 +1,9 @@
+# My Portfolio
 ![](./screenshots/home.png)
 
 This Portfolio Website provides visitors with insights into my expertise, qualifications, and past work. Whether you're a potential employer, collaborator, or simply curious about Zumrud's professional journey, this website offers a comprehensive overview of my skills and achievements.
+
+## Features
 
 - [About Me Section](./screenshots/about.png) - Learn about my background, skills and professional journey
 - [Project Showcase](./screenshots/portfolio.png) - Explore portfolio of projects, including descriptions, screenshots and links to live demos or repositories
